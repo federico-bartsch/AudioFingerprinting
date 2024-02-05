@@ -13,7 +13,7 @@ if __name__ == "__main__":
     if os.path.exists("database4.pickle"):
         database = Database.load_database(database_path)
     else:
-        database = Database.create_database("musica")
+        database = Database.create_database("music")
         Database.save_database(database_path, database)
 
     # Record audio for 7 seconds
